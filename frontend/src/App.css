@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+/* -------------------------------------------
+              Landing Page  
+---------------------------------------------- */
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 50px;
+  padding: 12px
+}
+
+.headerLeft {
+  padding: 8px;
+}
+
+.headerItems {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.headerItems>div {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #676B5F;
+  cursor: pointer;
+}
+
+.headerItems>div:hover {
+  background: rgb(239, 240, 236);
+  border-radius: 10px;
+}
+
+.headerRight {
+  display: flex;
+  margin-right: 10px 15px;
+  width: 25%;
+  /* height: max-content; */
+}
+
+.headerRight>div {
+  padding: 12px 16px;
+}
+
+#login {
+  background: rgb(239, 240, 236);
+  border-radius: 10px;
+  margin: 0px 20px;
+  text-decoration: none;
+  color: black;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  background: black;
+  color: white;
+  border-radius: 40px;
+  width: 40%;
+  text-align: center;
+  height: max-content;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.leftSide {
+  width: 50%;
+}
+
+.leftSide>p {
+  color: rgb(210, 232, 35)
+}
+
+.heading {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+
+.description {
+  font-size: 17px;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.linkTreeInput {
+  display: flex;
+  align-items: center;
+}
+
+.linkTreeInput>input {
+  max-width: 250px;
+  width: 220px;
+  height: 20px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin: 0px 10px;
+  border: none;
+  outline-color: black;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(103, 107, 95);
+  ;
+}
+
+#LinkTreeButton {
+  background: #E9C0E9;
+  color: black;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 20px;
+  padding: 20px 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.rightSide {
+  width: 50%;
+}
+
+.rightSide>img {
+  width: 52%;
+  padding: 0 25%;
+  border-radius: 10px;
+  /* height: 100%%; */
+  transition: transform 1s ease;
+}
+
+.rightSide>img:hover {
+  transform: rotate(360deg);
+  scale: 1.1
+}
+
+/* -------------------------------------------
+              Sign in Page  
+---------------------------------------------- */
+
+.signInWrapper {
+  display: flex;
+}
+
+.signInLeftSide {
+  width: 50%;
+  padding: 3%;
+}
+
+.signInRightSide {
+  width: 50%;
+}
+
+.LinktreeLogo>a>img {
+  width: 20%;
+}
+
+.signInRightSide>img {
+  width: 100%;
+  margin-top: -35%;
+}
+
+.logInContent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.logInContent>h1 {
+  font-size: 50px;
+  margin-bottom: 0
+}
+
+.logInContent>p {
+  font-size: 16px;
+  color: #676B5F;
+}
+
+.logInContent>input {
+  width: 80%;
+  padding: 16px;
+  border: 0.5px solid transparent;
+  outline-color: black;
+  background-color: #F6F7F5;
+  border-radius: 10px;
+  margin: 16px 0px 8px 0px;
+  font-size: 16px;
+  transition: linear 0.9s ease;
+}
+
+.logInContent>input:hover {
+  border: 1px solid #E0E0E0;
+  cursor: pointer;
+}
+
+.phoneNumberLogin {
+  width: 80%;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #8129D9;
+}
+
+.phoneNumberLogin:hover {
+  text-decoration: underline;
+}
+
+.loginBtn {
+  margin-top: 2rem;
+  width: 80%;
+  text-align: center;
+  background-color: #8129D9;
+  color: white;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.forgot {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.forgot>p>a {
+  color: #8129D9;
+}
+
+.forgot>p> {
+  color: #8129D9;
+}
+
+.or {
+  margin-top: 0;
+}
+
+.GoogleBtn {
+  width: 80%;
+  width: 80%;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #D3D3D3;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.AppleBtn {
+  width: 80%;
+  margin-top: 1rem;
+  width: 80%;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #D3D3D3;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.newSignUp {
+  padding: 2rem 0 1rem 0;
+  margin: 0;
+}
+
+
+/* -------------------------------------------
+              Linktree Page  
+---------------------------------------------- */
+.LinkTreeWrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+  background-color: #254336;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LinkTreeWrapper>img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.name {
+  font-size: x-large;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.LinkTreeWrapper>p {
+  color: white;
+  margin: 0 0 1rem 0;
+}
+
+.LinkTreeWrapper>div {
+  width: 60%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #D3D3D3;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #ECFFE6;
+}
+
+.LinkTreeWrapper>div:hover {
+  transform: scale(1.1);
+}
+
+.LinkTreeWrapper>div>a {
+  text-decoration: none;
+  color: #254336;
+  padding: 15px;
+}
+
+
+.sc-bdfBwQ {}
+
+.sc-gsTCUz {}
+
+.sc-aemoO {}
+
+.iIoWHx {
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 48px;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.bhdLno {
+  display: flex;
+}
+
+.iOmLqx {
+  min-height: 100dvh;
+  position: relative;
+}
+
+.ewSEqQ {
+  flex: 1 1 0%;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 64px 16px 32px;
+  height: 100%;
+  width: 100%;
+}
+
+.eqtAab {
+  margin: 0px auto;
+  height: 100%;
+  width: 100%;
+  max-width: 580px;
+}
+
+.erRfmt {
+  min-height: 100dvh;
+  background: linear-gradient(0deg, rgb(250, 232, 236), rgb(255, 255, 255));
+}
+
+.iCHEqi {
+  position: fixed;
+  inset: 0px;
+  z-index: -1;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(250, 232, 236);
+}
+
+.pkAuV {
+  position: relative;
+}
+
+.iHaOcn {
+  display: block;
+  position: relative;
+  top: -92px;
+  visibility: hidden;
+}
+
+.NkwoY {
+  z-index: 0;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border: 2px solid rgb(228, 186, 212);
+  transition: none;
+  box-shadow: rgb(228, 186, 212) 8px 8px 0px 0px;
+  color: rgb(92, 27, 56);
+  background-color: rgb(255, 255, 255);
+  width: calc(100% - 12px);
+  border-radius: 8px;
+}
+
+.eua-dhZ {
+  position: relative;
+  height: auto;
+}
+.hxNDJq {
+  hyphens: auto;
+  white-space: normal;
+  background: none;
+  color: inherit;
+  transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding-left: 66px;
+  padding-right: 66px;
+  min-height: 64px !important;
+}
+
+.ldGKnQ {
+  margin: 0px;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  padding: 16px 20px;
+  width: 100%;
+  appearance: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.CvSZl {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.bAqGfC {
+  left: 8px;
+  width: 46px;
+  height: 46px;
+}
+
+.inUMaH {
+  position: relative;
+  hyphens: none;
+}
+
+.gXKGT {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
